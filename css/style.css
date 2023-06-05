@@ -66,10 +66,6 @@ address {
 }
 
 .header {
-    width: 1600px;
-    height: 80px;
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -80,10 +76,10 @@ address {
     line-height: 1.38;
     letter-spacing: 0.03em;
     color: var(--accent-color);
-    margin-right: 92px;
 }
 
 .part-logo {
+    margin-right: 94px;
     color: var(--part-logo-color);
 }
 
@@ -92,6 +88,9 @@ address {
 }
 
 .nav-link-list {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.4;
@@ -144,6 +143,8 @@ address {
 .hero {
     text-align: center;
     padding-top: 200px;
+    padding-bottom: 200px;
+    background: var(--first-decoration-backgraund);
 }
 
 .hero-title {
@@ -194,7 +195,6 @@ address {
 
 .advantages-list {
     display: flex;
-    margin-bottom: 94px;
     margin-left: -30px;
 }
 
@@ -212,17 +212,18 @@ address {
     margin-bottom: 10px;
 }
 
-.hero {
-    width: 1600px;
-    height: 600px;
-    background: var(--first-decoration-backgraund);
-}
-
 .advantages-desc {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-theme-dark);
+}
+
+/*------END ADVANTAGES-------*/
+/*-----START MAIN-----*/
+
+.main {
+    padding-bottom: 94px;
 }
 
 .main-title {
@@ -235,14 +236,15 @@ address {
 
 .main-list {
     display: flex;
-    justify-content: space-between;
+    margin-left: -30px;
 }
 
 .main-list-iteam {
     width: 370px;
+    margin-left: 30px;
 }
 
-/*------END ADVANTAGES-------*/
+/*------END MAIN-------*/
 /*-----START EMPLOYEES------*/
 .employees {
     background-color: var(--second-decoration-backgroend);
@@ -298,12 +300,17 @@ address {
     color: var(--primare-text-color-theme-light);
 }
 
+.contact-info {
+    margin-top: 28px;
+}
+
 .address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 12px;
     color: var(--primare-text-color-theme-light);
 }
 
@@ -319,6 +326,10 @@ address {
 .info-mail:hover,
 .info-mail:focus {
     color: var(--primare-text-color-theme-light);
+}
+
+.info:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 .info-number {
@@ -353,6 +364,7 @@ address {
     cursor: pointer;
     color: var(--primare-text-color-theme-dark);
     background-color: var(--second-decoration-backgroend);
+    padding: 6px 22px;
 }
 
 .headline-btn:hover,
@@ -367,11 +379,8 @@ address {
 }
 
 .project-filtr {
-    width: 570px;
-    height: 54px;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
+    justify-content: center;
 }
 
 .project-filtr-item:not(:last-child) {
@@ -381,7 +390,7 @@ address {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 34px;
+    margin-top: 50px;
 }
 
 .project-list-item {
@@ -400,7 +409,8 @@ address {
 
 .project-items {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE
+    border: 1px solid #EEEEEE;
+    border-top: 0;
 }
 
 .project-name {
