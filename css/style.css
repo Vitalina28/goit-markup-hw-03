@@ -78,8 +78,11 @@ address {
     color: var(--accent-color);
 }
 
-.part-logo {
+.logo-first-part {
     margin-right: 94px;
+}
+
+.part-logo {
     color: var(--part-logo-color);
 }
 
